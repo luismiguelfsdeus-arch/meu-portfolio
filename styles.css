@@ -6,12 +6,11 @@
 }
 
 :root {
-    --primary: #6366f1;
-    --secondary: #8b5cf6;
-    --dark: #1f2937;
-    --light: #f3f4f6;
-    --white: #ffffff;
-    --spacing: 1rem;
+    --primary: #ff6b6b;      /* Vermelho coral */
+    --secondary: #4ecdc4;    /* Turquesa */
+    --accent: #ffe66d;       /* Amarelo */
+    --dark: #2d3436;
+    --light: #f8f9fa;
 }
 
 /* ===== BASE STYLES ===== */
