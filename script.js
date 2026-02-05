@@ -36,3 +36,19 @@ function loadSavedTheme() {
 document.addEventListener('DOMContentLoaded', () => {
     loadSavedTheme();
 });
+function loadSavedTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme) {
+        // Se utilizador já escolheu, usar preferência dele
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    } else {
+        // Se não escolheu, detectar preferência do sistema
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+            document.body.classList.add('dark-mode');
+        }
+    }
+}
