@@ -255,5 +255,30 @@ function resetVisitCounter() {
 // 9. Event listener no botão
 const resetBtn = document.getElementById('reset-counter');
 if (resetBtn) {
-    resetBtn.addEventListener('click', resetVisitCounter);
+    resetBtn.onclick = function () {
+        resetVisitCounter();
+    };
 }
+// Reúna todas as inicializações aqui para evitar conflitos
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Tema
+    loadSavedTheme();
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+
+    // 2. Relógio
+    loadClockFormat();
+    startClock();
+    const formatToggle = document.getElementById('format-toggle');
+    if (formatToggle) formatToggle.addEventListener('click', toggleFormat);
+
+    // 3. Contador de Visitas
+    initVisitCounter();
+    
+    // O SEU BOTÃO RESET:
+    const resetBtn = document.getElementById('reset-counter');
+    if (resetBtn) {
+        // Use addEventListener em vez de .onclick para maior consistência
+        resetBtn.addEventListener('click', resetVisitCounter);
+    }
+});
