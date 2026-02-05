@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary: #ffffff;      /* Vermelho coral */
-    --secondary: #4ecdc4;    /* Turquesa */
-    --accent: #ffe66d;       /* Amarelo */
+    --primary: #ffffff;      
+    --secondary: #4ecdc4;    
+    --accent: #85731c;       
     --dark: #2d3436;
     --light: #f8f9fa;
 }
@@ -129,4 +129,41 @@ footer {
     .projects-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+/* ===== TEMA CLARO (padrão) ===== */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --accent: #6366f1;
+    --border: #e5e7eb;
+}
+
+/* ===== TEMA ESCURO ===== */
+body.dark-mode {
+    --bg-primary: #1f2937;
+    --bg-secondary: #111827;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --accent: #818cf8;
+    --border: #374151;
+}
+
+/* ===== APLICAR VARIÁVEIS ===== */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+}
+
+.project-card {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
 }
