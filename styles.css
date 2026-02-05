@@ -147,9 +147,18 @@ body.dark-mode {
     --text-primary: #f9fafb;
     --text-secondary: #f80707;
     --accent: #818cf8;
-    --border: #374151;
+    --border: #374151;    
+}
+/* Modifica o Hero quando o dark-mode está ativo */
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #111827 0%, #374151 100%);
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border);
 }
 
+body.dark-mode .hero h2 {
+    color: var(--accent);
+}
 /* ===== APLICAR VARIÁVEIS ===== */
 body {
     background-color: var(--bg-primary);
