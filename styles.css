@@ -11,7 +11,7 @@
     --accent: #85731c;       
     --dark: #2d3436;
     --light: #f8f9fa;
-}
+} 
 
 /* ===== BASE STYLES ===== */
 body {
@@ -107,7 +107,7 @@ section h2 {
 
 /* ===== FOOTER ===== */
 footer {
-    background: var(--dark);
+    background: var(--white);
     color: var(--white);
     text-align: center;
     padding: 2rem var(--spacing);
@@ -136,7 +136,7 @@ footer {
     --bg-secondary: #f3f4f6;
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
-    --accent: #6366f1;
+    --accent: #010253;
     --border: #e5e7eb;
 }
 
@@ -145,7 +145,7 @@ body.dark-mode {
     --bg-primary: #1f2937;
     --bg-secondary: #111827;
     --text-primary: #f9fafb;
-    --text-secondary: #d1d5db;
+    --text-secondary: #f80707;
     --accent: #818cf8;
     --border: #374151;
 }

@@ -271,9 +271,6 @@ document.addEventListener('DOMContentLoaded', () => {
     startClock();
     const formatToggle = document.getElementById('format-toggle');
     if (formatToggle) formatToggle.addEventListener('click', toggleFormat);
-
-    // 3. Contador de Visitas
-    initVisitCounter();
     
     // O SEU BOTÃO RESET:
     const resetBtn = document.getElementById('reset-counter');
