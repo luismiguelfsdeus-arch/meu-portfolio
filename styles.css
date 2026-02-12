@@ -138,6 +138,7 @@ footer {
     --text-secondary: #6b7280;
     --accent: #010253;
     --border: #e5e7eb;
+    --primary: #000000;
 }
 
 /* ===== TEMA ESCURO ===== */
@@ -147,7 +148,8 @@ body.dark-mode {
     --text-primary: #706d6d;
     --text-secondary: #f80707;
     --accent: #818cf8;
-    --border: #374151;    
+    --border: #374151;
+    --primary: #ffffff;    
 }
 /* Modifica o Hero quando o dark-mode está ativo */
 body.dark-mode .hero {
@@ -324,9 +326,9 @@ body.dark-mode .icon-light {
 }
 
 .filter-btn.active {
-    background: var(--primary);
+    background:  rgb(146, 146, 146);;
     color: rgb(0, 0, 0);
-    border-color: var(--primary);
+    border-color:  rgb(0, 0, 0);
 }
 
 .filter-btn .count {
