@@ -1,32 +1,4 @@
 /* ============================================================
-   STYLES.CSS — Portfolio Interativo
-   Sessões 2, 3 e 4
-
-   COMO O CSS FUNCIONA (resumo para iniciantes):
-   ─────────────────────────────────────────────
-   CSS (Cascading Style Sheets) define o aspeto visual do HTML.
-   Cada bloco CSS tem a forma:
-       seletor {
-           propriedade: valor;
-       }
-
-   SELETORES mais comuns:
-     elemento        → aplica a todas as tags desse tipo  (ex: body, nav)
-     .classe         → aplica a elementos com class="..."  (ex: .hero)
-     #id             → aplica ao elemento com id="..."     (ex: #year)
-     elemento:hover  → aplica quando o rato está em cima
-     elemento:focus  → aplica quando o elemento está selecionado (teclado/clique)
-     pai filho       → aplica ao 'filho' dentro do 'pai'   (ex: nav ul a)
-
-   CASCATA E ESPECIFICIDADE:
-     Se duas regras se contradizem, ganha a mais "específica".
-     Ordem de especificidade (crescente):
-       elemento < .classe < #id < style="" inline
-     Se a especificidade for igual, ganha a regra que vem por ÚLTIMO no ficheiro.
-   ============================================================ */
-
-
-/* ============================================================
    VARIÁVEIS CSS (Custom Properties)
    ============================================================
 
@@ -242,12 +214,6 @@ section h2 {
        não por toda a largura da página. */
     display: inline-block;
 }
-
-
-/* ============================================================
-   ATIVIDADE 2: RELÓGIO DIGITAL
-   ============================================================ */
-
 .clock-container {
     display: flex;
     flex-direction: column; /* Empilha os filhos verticalmente (em vez de linha) */
@@ -315,11 +281,6 @@ section h2 {
     transform: translateY(-2px); /* Sobe 2px ao hover — efeito de "levantar" */
     box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35); /* Sombra com cor do accent */
 }
-
-
-/* ============================================================
-   ATIVIDADE 3: CONTADOR DE VISITAS
-   ============================================================ */
 
 .visit-counter {
     background: var(--bg-secondary);
@@ -425,11 +386,6 @@ footer {
     font-size: 0.9rem;
     transition: border-color 0.3s ease;
 }
-
-
-/* ============================================================
-   ATIVIDADE 1: BOTÃO DARK/LIGHT MODE (flutuante)
-   ============================================================ */
 
 .theme-toggle {
     /* CONCEITO — position: fixed:
@@ -539,13 +495,6 @@ body.dark-mode .icon-light {
         font-size: 1.2rem;
     }
 }
-
-
-/* ============================================================
-   SESSÃO 3: GALERIA DINÂMICA DE PROJETOS
-   ============================================================ */
-
-
 /* --- Barra de Controlo (filtros + pesquisa) --- */
 
 .projects-controls {
@@ -670,7 +619,7 @@ body.dark-mode .icon-light {
 }
 
 
-/* --- Grid de Projetos (Sessão 3 — sobrescreve o grid base) --- */
+/* --- Grid de Projetos */
 
 /* Esta regra aparece mais abaixo no ficheiro, por isso sobrescreve
    a .projects-grid definida mais acima (colunas maiores: 300px vs 280px) */
@@ -872,14 +821,14 @@ body.dark-mode .icon-light {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%; /* Botão circular */
+    border-radius: 50%;
     transition: all 0.2s ease;
 }
 
 .modal-close:hover {
     background: #ef4444;
     color: white;
-    transform: rotate(90deg); /* Roda 90° ao hover — efeito visual interessante */
+    transform: rotate(90deg);
 }
 
 /* Etiqueta da categoria no modal */
@@ -928,7 +877,7 @@ body.dark-mode .icon-light {
 
 .modal-section p {
     color: var(--text-secondary);
-    line-height: 1.7; /* Mais espaço entre linhas para facilitar leitura */
+    line-height: 1.7;
 }
 
 /* Lista de funcionalidades (sem bullets padrão) */
